@@ -12,35 +12,39 @@
 
 /* Imports the font that is used on this page. */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
 
 /* This section sets the defaults for the page, but you may never see changes here if they are overwritten by the div elements below.  */
 html, body {
 	margin: 0;  /* Margin is the amount of space between the border of an element, and the elements outside it. */
-	padding: 0; /* Padding is the amount of space between the border of an element, and the elements inside it. */
+	padding: 10px; /* Padding is the amount of space between the border of an element, and the elements inside it. */
 }
 
 body{
-	font: 130%/1.3 TrebuchetMS,Arial,sans-serif;  /* Default fonts */
+	font: 130%/1.3 'Lato',Arial,sans-serif;
+	font-weight: 300;  /* Default fonts */
 	text-align: left; /* Alignment of the text */
 	color: black; /* Main text color */
 	background: white; /* Main text background color */
 	padding-bottom: 20px; /* You can set padding or margin for one side of an element at a time */
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 a {                  /* A stands for link, so this section is setting the default characteristics of links. */
-	color: #C41E3A;
+	color: #3FCDF9;
 	text-decoration: none;
 }
 
 h1 {		     /* This styles the header at the top of the page */
-	font: bold 2.1em 'Source Sans Pro',Arial, Sans-Serif;
-	text-align: left;
+	font-weight: 400;
+	font-size: 36px;
+	text-align: center;
 	color: white;
 }
 
 h2 {		     /* This styles the headers within the page */
-	font: bold 1.1em 'Source Sans Pro',Arial, Sans-Serif;
 	padding: 0;
 	margin: 0;
 }
@@ -60,11 +64,6 @@ div.section {
 	color: white;
 	font: 'Source Sans Pro',Arial, Sans-Serif;
 	background-image: none;  /* replace none with url('image-url') to set a background image  */
-}
-
-/* You can alter the links within a div with the following syntax */
-#plan a {
-	color: #C41E3A;
 }
 
 /* This alters the appearance of the div with id="signup". */
